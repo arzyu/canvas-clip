@@ -2,15 +2,17 @@
   "name": "canvas-clip",
   "version": "0.1.0",
   "description": "A simple tool of canvas clip",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "scripts": {
-    "build": "ts-node build/build.ts",
+    "build": "rm -rf dist && tsc",
     "prerelease": "npm run build",
-    "release": "npm publish dist/ --access public"
+    "release": "npm publish --access public"
   },
   "devDependencies": {
-    "@types/fs-extra": "^5.0.4",
-    "fs-extra": "^7.0.1",
-    "ts-node": "^7.0.1",
     "typescript": "^3.1.6"
   },
   "repository": {

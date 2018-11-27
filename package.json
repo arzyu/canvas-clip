@@ -9,7 +9,7 @@
   ],
   "scripts": {
     "build": "rm -rf dist && tsc",
-    "prerelease": "npm run build",
+    "prepare": "npm run build",
     "release": "npm publish --access public"
   },
   "devDependencies": {
